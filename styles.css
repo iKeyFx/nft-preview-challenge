@@ -1,0 +1,123 @@
+body {
+  display: grid;
+  background-color: hsl(217, 54%, 11%);
+  min-height: 100vh;
+  align-items: center;
+  justify-items: center;
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+}
+
+.wrapper {
+  display: grid;
+  background-color: hsl(216, 50%, 16%);
+  width: 18.75rem;
+  height: auto;
+  padding: 1.25rem;
+  border-radius: 0.9rem;
+  box-shadow: 1.25rem 1.25rem 3.13rem 0.9rem rgb(7, 10, 24);
+}
+p {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.13rem;
+  color: hsl(215, 51%, 70%);
+  margin: 1.25rem 0;
+  font-weight: 300;
+}
+hr {
+  border: 1px solid hsl(215, 32%, 27%);
+}
+h3 {
+  font-weight: 600;
+}
+h3:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+/* START */
+
+.image {
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.hover-img {
+  background-color: hsl(178, 100%, 50%);
+  border-radius: 0.6rem;
+  place-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 100;
+  opacity: 0;
+  width: 18.75rem;
+  height: 18.75rem;
+}
+.hover-img img {
+  display: grid;
+  align-items: center;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+.hover-img:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+/* END */
+
+.wrapper .image img {
+  display: block;
+  max-width: 100%;
+  border-radius: 0.6rem;
+  z-index: 1;
+}
+
+.price-time {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  position: relative;
+  margin: 1.8rem 0;
+}
+
+.price-time img {
+  padding-right: 0.6rem;
+  position: absolute;
+}
+.price-time .left span {
+  color: hsl(178, 100%, 50%);
+  margin-left: 1.25rem;
+}
+
+.price-time .right span {
+  margin-left: 1.25rem;
+  color: hsl(215, 51%, 70%);
+}
+.creator {
+  display: flex;
+  margin: 1.25rem 0;
+}
+
+.creator img {
+  display: block;
+  max-width: 1.88rem;
+  max-height: 1.88rem;
+  border-radius: 50%;
+  border: 1px white solid;
+}
+.creator p {
+  margin: 0.3rem 1.25rem;
+}
+
+.creator span {
+  color: white;
+}
+.creator span:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
